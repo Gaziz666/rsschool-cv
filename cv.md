@@ -13,7 +13,7 @@ From January 2020 I started learning programming. I a'm finished freecodecamp.or
 I'm hoping to become a FullStack developer. and get a job in a big IT company, where I can learn and realize myself.
 
 I have [portfolio](http://gazizdev.com/)
-### Skills
+### Skills 
 HTML5, CSS3, JavaScript, DOM, JSON,
 
 basic knowledge in REACT/REDUCE, MongoDB, MYSQL, Node.js, Express, D3, GIT.
