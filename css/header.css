@@ -1,0 +1,73 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+  }
+.body {
+  max-width: 840px;
+  margin: 0 auto;
+  }
+.header_flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header_height{
+  height: 250px;
+  color: white;
+  background-image: url(/img/PC.jpg);
+  background-position: center;
+}
+.header_background{
+  height: 250px;
+  background-color: rgba(39, 39, 39, 0.7);
+}
+.logo_container{ 
+  width: 245px;
+  height: 100%;
+  min-width: 245px;
+}
+.logo__img_circle{
+  border-radius:50%;
+  border: solid rgb(255, 255, 249) 3px;
+  height: 80%;
+  width: 80%;
+  background-image: url(/img/gaziz.jpg);
+  background-size: 100% 120%;
+  margin: 10% 10%
+}
+
+.header__textContainer {
+  flex: 70%;
+  text-align: center;
+}
+.header__fio_size {
+  font-size: 60px;
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.header__description_size{
+  color: rgb(168, 165, 165);
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 650px) {
+  .header_flex{
+    flex-direction: column;
+  }
+  .logo_container{ 
+    width: 120px;
+    height: 120px;
+    min-width: 100px;
+  }
+  .header__fio_size {
+    font-size: 35px;
+    
+  }
+}
+
