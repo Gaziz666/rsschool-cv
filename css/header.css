@@ -16,7 +16,7 @@ body{
 .header_height{
   height: 250px;
   color: white;
-  background-image: url(/img/PC.jpg);
+  background-image: url(../img/PC.jpg);
   background-position: center;
 }
 .header_background{
@@ -33,7 +33,7 @@ body{
   border: solid rgb(255, 255, 249) 3px;
   height: 80%;
   width: 80%;
-  background-image: url(/img/gaziz.jpg);
+  background-image: url(../img/gaziz.jpg);
   background-size: 100% 120%;
   margin: 10% 10%
 }
