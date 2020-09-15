@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyCV</title>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/mainSection.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="body">
+    <header class="header header_height">
+      <div class="header header_flex header_background">
+        <div class="logo logo_container">
+          <div class="logo__img logo__img_circle"></div>
+        </div>
+    
+        <div class="header__textContainer">
+          <h1 class="header__fio_size">Tuleukulov<br> Gaziz</h1>
+          <h2 class="header__description_size">Front end developer</h2>
+        </div>
+      </div>
+    </header>
+    
+    <section class="main">
+
+      <article class="about-me">
+        <h2 class="main__header_size">About me:</h2>
+        <p class="main__paragraf_size">I have a 10-year experience in management and project management. But I like to do something more myself, than to manage and control employees.</p>
+        <p class="main__paragraf_size">From January 2020 I started learning programming. I a’m finished freecodecamp.org courses, learn.javascript.ru, htmlbook.ru. Now I am undergoing training in the Belarusian company AIS in the direction FrontEnd and Node.js.</p>        
+        <p class="main__paragraf_size">I’m hoping to become a FullStack developer. and get a job in a big IT company, where I can learn and realize myself.</p>
+      </article>
+
+      <article class="two-colum">
+          <div class="main-first-colum">
+
+            <h2 class="main__header_size">Skills:</h2>
+            <ul class="main__paragraf_size">
+                <li>HTML5, CSS3</li>
+                <li>JavaScript, DOM</li>
+                <li>REACT/REDUCE, JSON</li>
+                <li>MongoDB, MYSQL</li>
+                <li>Node.js, Express, D3</li>
+                <li>GIT</li>
+            </ul>
+
+            <h2 class="main__header_size">Experience</h2>
+            <ul class="main__paragraf_size">
+                <li><a href="http://gazizdev.com/">portfolio</a></li>
+                <li><a href="https://codepen.io/gaziz">projects from courses</a></li>
+            </ul>
+            
+          </div>
+
+          <div class="main-second-colum">
+            <h2 class="main__header_size">Employment History:</h2>
+            <p class="main__paragraf_size">
+                10 years of experience as a Project manager in state institutions of the Republic of Kazakhstan.
+            </p>
+            <p class="main__paragraf_size">
+                2010 - 2017 General Prosecutor office of the Republic of Kazakhstan, IT manager, head of IT Department
+            </p>
+            <p class="main__paragraf_size">
+                2018 - 2019 Aktobe City Mayor Administration of the Republic of Kazakhstan, Executive of municipal public institution ‘Aktobe City Efficient Development Centre’
+            </p>
+          </div>
+        
+      </article>
+
+      <hr class="article-line">
+
+      <article class="two-colum">
+
+        <div class="main-first-colum">
+          <h2 class="main__header_size">Contacts</h2>
+          <ul class="main__paragraf_size ul_none-decor">
+            <li>whatsapp: <b>+77017000666</b></li>
+            <li>Telegram: <b>@Gaziz_T</b></li>
+            <li>Email: <b>gaziz.cyprus@gmail.com</b></li>
+          </ul>
+        </div>
+
+        <div class="main-second-colum">
+          <h2 class="main__header_size">Educations</h2>
+          <ul class="main__paragraf_size">
+            <li>Courses: <a href="https://www.freecodecamp.org/gaziz_cyprus"> freecodepen.org</a></li>
+            <li>Bachelor of Systems Engineer (2003 – 2008) Karagandy State Technical University, Karagandy city, Kazakhstan        </li>
+            <li>Bachelor of Laws (2010 – 2012) Femida Law Academy , Karagandy city, Kazakhstan Education (including courses, seminars, lectures, online learning)</li>
+          </ul>
+
+          <h2 class="main__header_size">English</h2>
+          <p class="main__paragraf_size">level B1. English courses.</p>
+        </div>
+
+      </article>
+
+      <hr class="article-line">
+
+      <article>
+
+      </article>
+        <h2 class="main__header_size">Code examples</h2>
+        <code class="code__overflow main__paragraf_size"><pre>
+document.addEventListener("DOMContentLoaded", function () {
+//при нажатии кнопки меню или тело сайта то всплвающее меню должно скрыться
+let x = document.getElementById("checkbox-menu");
+let menuToch = document.getElementById("menuTouch");
+menuTouch.onclick = () => {
+  if (x.checked == true) {
+    x.checked = false;
+  }
+};
+            
+// настройка секции ABOUT блок knowledge
+let script = document.getElementById("script");
+let all = document.getElementById("all");
+let marckup = document.getElementById("marckup");
+let web = document.getElementById("web");
+let db = document.getElementById("db");
+let frameworks = document.getElementById("frameworks");
+            
+//находим заголовки блока knowledge
+let areasOfKnowHeader = document.getElementById("areasOfKnowHeader");
+let areasHeaderLi = areasOfKnowHeader.querySelectorAll("li");
+            
+//доступ к блокам через контейнер
+let knouwBlocks = document.getElementById("areasOfKnowBlock");
+// доступ ко всем блокам по классу
+let knowBlock = knouwBlocks.querySelectorAll("div"); 
+            
+// действие при нажатии на all, все становится непрозрачным
+all.onclick = function () {
+for (let i = 0; i < knowBlock.length; i++) {
+  knowBlock[i].style.opacity = "1";
+  knowBlock[i].style.animation = "scaling_full .6s steps(20) 1";
+  knouwBlocks.classList.add("allArea");
+  //удоляем все стили из других кнопок
+  knouwBlocks.classList.remove("scriptArea");
+  knouwBlocks.classList.remove("marckupArea");
+  knouwBlocks.classList.remove("webArea");
+  knouwBlocks.classList.remove("dbArea");
+  knouwBlocks.classList.remove("frameworksArea");
+}
+// меням цвет фона при нажатии
+for (let i = 0; i < areasHeaderLi.length; i++) {
+  if (areasHeaderLi[i].id == "all") {
+    areasHeaderLi[i].style.background = "rgb(55, 80, 126)";
+  } else {
+    areasHeaderLi[i].style.background = "";
+  }
+}
+};
+        </pre></code>
+    </section>
+
+    <footer class="footer">
+        
+    </footer>
+  </main>
+</body>
+</html>
